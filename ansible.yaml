@@ -1,4 +1,4 @@
-- hosts: 172.16.100.102
+- hosts: localhost
   become: yes
   tasks:
   - name: Update host
