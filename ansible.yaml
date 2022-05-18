@@ -1,5 +1,5 @@
 - hosts: 172.16.100.102
-  remote_user: root
+  become: yes
   tasks:
   - name: Update host
     apt: 
