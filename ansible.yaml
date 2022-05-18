@@ -1,4 +1,4 @@
-- hosts:  webservers
+- hosts: 172.16.100.102
   remote_user: root
   tasks:
   - name: Update host
