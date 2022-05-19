@@ -1,4 +1,4 @@
-- hosts: localhost
+- hosts: webserver
   gather_facts: true
   tasks:
   - action: ping
