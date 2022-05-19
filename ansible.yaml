@@ -1,6 +1,9 @@
 - hosts: localhost
   become: yes
   tasks:
+  - name: Update cache 
+    apt:
+      update_cache: yes
   - name: Update host
     apt: 
       name: "*" 
