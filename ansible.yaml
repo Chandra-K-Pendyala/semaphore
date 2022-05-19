@@ -1,5 +1,12 @@
 - hosts: webserver
   gather_facts: true
   tasks:
-  - action: ping
+  - name: Update cache 
+    apt:
+      update_cache: yes
+  - name: Update host
+    apt: 
+      name: "*" 
+      state: latest
+  
 
